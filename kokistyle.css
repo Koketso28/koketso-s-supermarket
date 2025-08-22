@@ -1,0 +1,164 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffb3d9; /* Pink background */
+}
+
+Header {
+    Background-color: #ff66b2;
+}
+
+.browser-bar {
+    Display: flex;
+    Align-items: center;
+    Padding: 10px;
+}
+
+.browser-bar .circle {
+    Width: 12px;
+    Height: 12px;
+    Background-color: white;
+    Border-radius: 50%;
+    Margin-right: 5px;
+}
+
+.browser-bar input {
+    Flex: 1;
+    Padding: 5px;
+    Margin-left: 10px;
+    Border: none;
+    Border-radius: 5px;
+}
+.gallery{
+   width: 1100px;
+}
+
+Nav ul {
+    List-style: none;
+    Display: flex;
+    Justify-content: center;
+    Padding: 0;
+    Margin: 0;
+    Background-color: #ff80bf;
+}
+
+Nav ul li {
+    Margin: 0 15px;
+}
+
+Nav ul li a {
+    Text-decoration: none;
+    Color: white;
+    Font-weight: bold;
+}
+.welcome {
+    Text-align: center;
+    Padding: 20px;
+}
+
+.gallery {
+    Display: flex;
+    Justify-content: center;
+    Gap: 15px;
+    Padding: 20px;
+}
+
+.placeholder {
+    Width: 100px;
+    Height: 100px;
+    Background-color: white;
+    Border: 2px solid #ccc;
+}
+
+.description {
+    Text-align: center;
+    Padding: 20px;
+}
+
+Footer {
+    Text-align: center;
+    Background-color: #ff66b2;
+    Color: white;
+    Padding: 10px;
+} 
+
+header {
+    background-color: #ff66b2;
+}
+
+.browser-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.browser-bar .circle {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.browser-bar input {
+    flex: 1;
+    padding: 5px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color: #ff80bf;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li:hover{
+   color: blue;
+}
+.welcome {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #ccc;
+}
+
+.description {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px;
+}
+

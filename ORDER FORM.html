@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koki's Supermarket - Order Form</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO KOKI'S SUPERMARKET</h1>
+        <nav>
+            <a href="HOME.html">Home Page</a>
+            <a href="PK.html">Log In</a>
+            <a href="ABOUT.html">ABOUT</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order-form">
+            <h2>Order Form</h2>
+            <form>
+                <label>Name:</label>
+                <input type="text" name="name" required>
+
+                <label>Surname:</label>
+                <input type="text" name="surname" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" required>
+
+                <label>Contact No:</label>
+                <input type="tel" name="contact" required>
+
+                <label>Payment:</label>
+                <input type="text" select name="payment" placeholder="e.g. Credit Card OR cash">
+
+                <label>Foods:</label>
+                <select name="foods">
+                    <option value="">Select types of food</option>
+                    <option value="rice">rice</option>
+                    <option value="samp">samp</option>
+                    <option value="potatoes">potatoes</option>
+                    <option value="beans">beans</option>
+                    <option value="maize meal">maize meal</option>
+                </select>
+
+                <div class="images">
+                    <img src="beans.webp">
+                    <img src="potatos.png">
+                    <img src="rice.jpg">
+                    <img src="samp.jpg">
+                </div>
+
+                <button type="button">CALCULATE</button>
+            </form>
+        </section>
+
+        <section class="social">
+            <p>You can find us on</p>
+            <img src="facebook.webp " alt="Facebook">
+            <img src="watsapp.avif" alt="WhatsApp">
+            <img src="twitter.webp" alt="Twitter">
+        </section>
+    </main>
+</body>
+</html>
+
+<script>
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const orderForm = document.querySelector(".order-form");
+
+    if (orderForm) {
+        orderForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // stop page reload
+
+            const name = document.getElementById("customerName").value.trim();
+            const product = document.getElementById("product").value.trim();
+            const quantity = document.getElementById("quantity").value;
+
+            if (name === "" || product === "" || quantity === "") {
+                alert("⚠️ Please fill in all fields.");
+                return;
+            }
+
+            if (quantity <= 0) {
+                alert("⚠️ Quantity must be at least 1.");
+                return;
+            }
+
+            // If everything is valid
+            alert("✅ Thank you, " + name + "! Your order for " + quantity + " x " + product + " has been placed.");
+            orderForm.reset();
+        });
+    }
+});
+</script>

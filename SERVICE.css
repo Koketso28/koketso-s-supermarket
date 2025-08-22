@@ -1,0 +1,24 @@
+/* Services page */
+.services-section {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.services-section h2 {
+    color: #ff4da6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    color: #ff66b2;
+    margin-bottom: 5px;
+}

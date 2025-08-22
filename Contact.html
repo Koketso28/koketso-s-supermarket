@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Koki's Supermarket</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Shared Header -->
+    <header>
+        <h1>Koki's Supermarket</h1>
+        <nav>
+            <ul>
+                <li><a href="HOME.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Use the form below or reach out via our contact details.</p>
+
+            <form class="contact-form" action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-details">
+                <h3>Our Address</h3>
+                <p>Koki's Supermarket<br>
+                Zone 1 Polokwane<br>
+                Hometown, Country</p>
+
+                <h3>Phone</h3>
+                <p>+123 456 7890</p>
+
+                <h3>Email</h3>
+                <p>support@kokisupermarket.com</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer>
+        <p>&copy; 2025 Koki's Supermarket | Follow us on 
+            <a href="#">Facebook</a>, <a href="#">WhatsApp</a>, and <a href="#">Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>

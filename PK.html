@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koki's Supermarket - Home</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Koki's Supermarket</h1>
+    <nav>
+      <ul>
+        <li><a href="PK.html" class="active"></a></li>
+        <li><a href="ORDER FORM.html">Order</a></li>
+         <li><a href="HOME.html">HOME Page</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <section class="home-section">
+      <h2>Welcome to Koki's Supermarket</h2>
+      <p>Your one-stop shop for fresh groceries, household items, and more!</p>
+    </section>
+
+    <!-- Login Form directly on Home Page -->
+    <section class="login-section">
+      <h2>Login to Your Account</h2>
+      <form class="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button onclick="addEventListener()">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Koki's Supermarket</p>
+  </footer>
+
+  <!-- Link JavaScript -->
+  <script src="login.js"></script>
+</body>
+</html>
